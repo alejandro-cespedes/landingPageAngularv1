@@ -1,0 +1,119 @@
+<header class="header">
+  <picture class="container__img">
+    <img class="img__caporala" src="../assets/img/ImagenFondoInicial.jfif" alt="" />
+    <div class="subtitle">
+      <p class="subtitle__paragraph">
+        Invierte en lotes en ICA
+      </p>
+      <p class="subtitle__paragraph">
+        Este Sábado 11 de Noviembre, 9:00 AM
+      </p>
+    </div>
+    <div class="form">
+      <form (ngSubmit)="submitForm()" class="form__form" #form="ngForm">
+        <div class="form__field">
+          <label for="name" class="form__label">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            class="form__input"
+            placeholder="Escribe tu nombre"
+            [(ngModel)]="formData.name"
+            [ngModelOptions]="{standalone: true}"
+          />
+        </div>
+
+        <div class="form__field">
+          <label for="whatsapp" class="form__label">WhatsApp:</label>
+          <input
+            type="text"
+            id="whatsapp"
+            class="form__input"
+            placeholder="Escribe tu numero de WhatsApp"
+            [(ngModel)]="formData.whatsapp_number"
+            [ngModelOptions]="{standalone: true}"
+          />
+        </div>
+
+        <button type="submit" class="form__button">
+          Haz Clic Aquí Para Registrarte
+        </button>
+
+      </form>
+
+    </div>
+  </picture>
+</header>
+
+<main class="main">
+  <section class="section__image">
+    <p>
+      <img
+        class="section__image--principal"
+        src="../assets/img/imagenPrincipal01.jfif"
+        alt="imagen1"
+      />
+    </p>
+
+    <label class="section__extrac">
+      ¡En <span class="subtext">La Caporala</span> ya contamos con
+      <span class="subtext">postes de electricidad</span> y
+      <span class="subtext">pozos de agua!</span>
+    </label>
+
+    <div class="button__section__image">
+      <a href="#" class="letterButton">
+        Haz clic aquí para enviarte la presentación
+      </a>
+    </div>
+
+    <p>
+      <img
+        class="image2"
+        src="../assets/img/imagenCaballitoLogo.jfif"
+        alt="imagen2"
+      />
+    </p>
+
+    <p class="founder__container">
+      <label class="section__extrac">
+        Imagina invertir en un lote cuya plusvalía crece desde el principio.
+        <span class="subtext">¡Ya son más de 400 familias que invirtieron!</span>
+      </label>
+    </p>
+
+    <img class="image3" src="../assets/img/imagenPrincipal02.jfif" alt="imagen3" />
+  </section>
+
+  <section class="section__image">
+    <p>
+      <label class="section__extrac subtext">En corporación Quevedo te ofrecemos:
+      </label>
+    </p>
+
+    <img class="benefit" src="../assets/img/01.jfif" alt="factibilidadServicios">
+    <img class="benefit" src="../assets/img/02.jfif" alt="tituloPropiedad">
+    <img class="benefit" src="../assets/img/03.jfif" alt="ubicacionPrivilegiada">
+    <img class="benefit" src="../assets/img/04.jfif" alt="garantia">
+
+    <div class="button__section__image">
+      <a href="#" class="letterButton">Haz clic aquí para enviarte la presentación</a>
+    </div>
+  </section>
+
+  <section class="section__image">
+    <p class="founder__container">
+      <label class="section__extrac weight100">
+        Nosotros somos el estudio de arquitectos de corporación Quevedo y estamos listos para diseñar el hogar de tus sueños
+      </label>
+    </p>
+
+    <img class="benefit" src="../assets/img/imagenPrincipal03.jfif" alt="factibilidadServicios">
+
+    <div class="button__section__image">
+      <a href="#" class="letterButton">Haz clic aquí para enviarte la presentación</a>
+    </div>
+    <hr>
+    <hr>
+  </section>
+</main>
