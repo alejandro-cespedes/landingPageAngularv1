@@ -7,7 +7,7 @@ import { Observable, catchError } from 'rxjs';
   providedIn: 'root'
 })
 export class FormService {
-  private apiUrl = 'http://127.0.0.1:8000/api/form/';
+  private apiUrl = 'https://api-landing-page.corporacionquevedo.com/api/form/';
 
   constructor(private http: HttpClient) {}
 
