@@ -40,8 +40,8 @@ export class RegisterComponent implements OnInit {
   }
 
   abrirEnlace() {
-    // Lógica para abrir el enlace, por ejemplo:
-    window.open('https://chat.whatsapp.com/GmEj1JRhaySE4esw79RjRW', '_blank');
-    this.enlaceAbierto = true; // Marca que el enlace se ha abierto para evitar el bucle
+    window.location.href = 'https://wa.link/d64xp6';
+    this.enlaceAbierto = true;
   }
+
 }

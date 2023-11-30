@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
   --color-body: #44003B;
-  --color-button: rgba(11, 150, 34, 0.932);
+  --color-button: #38b000;
   --box-shadow-button: 0 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -13,6 +13,7 @@ body {
   height: 140vh;
   background-color: var(--color-body);
   align-items: start;
+
 }
 
 .subtitle {
@@ -54,26 +55,57 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .section__extrac {
-  font-size: 30px;
-  color: var(--color-body);
-  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  line-height: 1;
+}
+.congratulations{
+  font-weight: 900;
+  line-height: 1.8;
+}
+
+.section__extrac.label {
+  font-weight: 700; /* Grosor del texto para el elemento label */
 }
 
 .subtext {
-  font-size: 30px;
-  color: var(--color-body);
-  font-family: Arial, sans-serif;
+  font-weight: 900; /* Grosor del texto para los elementos span (por defecto, puedes ajustar según sea necesario) */
+  color: var(--color-body); /* Color de texto para los elementos span, puedes ajustar según sea necesario */
 }
 
 .image2 {
-  width: 150px;
+  width: 250px;
+  margin-top: 2em;
 }
 
 .image3 {
   margin: 20px;
-  width: 100%;
-  object-fit: contain;
+  width: 40%;
+  object-fit: cover;
+  clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
+}
+
+
+
+@media (max-width: 429px) {
+  .image3 {
+    width: 100%;
+  }
+  .founder__container{
+    width: 100%;
+  }
+  .section__extrac {
+    font-size: 1.8em;
+    line-height: 1;
+    margin-top: -1em;
+  }
+
+  .image2 {
+    width: 250px;
+    margin-top: 2em;
+  }
+
 }

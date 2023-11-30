@@ -1,0 +1,33 @@
+
+@keyframes scroll-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.scroll-up-animation {
+  animation: scroll-up 0.5s ease-out;
+}
+.letterButton{
+  cursor: pointer;
+}
+
+
+.img3{
+  width: 550px;
+}
+
+@media (max-width: 429px) {
+  .img3 {
+    width: 250px;
+  }
+}
+.form__button{
+  padding: 1em;
+}
+.founder__container{
+  padding: 1.2em
+}

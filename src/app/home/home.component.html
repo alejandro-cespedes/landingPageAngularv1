@@ -1,18 +1,17 @@
 <header class="header">
   <picture class="container__img">
-    <img class="img__caporala" src="../assets/img/ImagenFondoInicial.jfif" alt="" />
+    <source media="(min-width: 428px)" srcset="../../assets/img/casaCampo/ImagenFondoInicial.png">
+
+    <!-- Imagen para pantallas más pequeñas -->
+    <img class="img__caporala" src="../../assets/img/casaCampo/ImagenFondoInicial-mobile.png" alt="" />
     <div class="subtitle">
       <p class="subtitle__paragraph">
-        Invierte en lotes en ICA
-      </p>
-      <p class="subtitle__paragraph">
-        Este Sábado 11 de Noviembre, 9:00 AM
+        Regístrate y te asesoramos totalmente Gratis
       </p>
     </div>
     <div class="form">
       <form (ngSubmit)="submitForm()" class="form__form" #form="ngForm">
         <div class="form__field">
-          <label for="name" class="form__label">Nombre:</label>
           <input
             type="text"
             id="name"
@@ -24,19 +23,18 @@
         </div>
 
         <div class="form__field">
-          <label for="whatsapp" class="form__label">WhatsApp:</label>
           <input
             type="text"
             id="whatsapp"
             class="form__input"
-            placeholder="Escribe tu numero de WhatsApp"
+            placeholder="Escribe tu número de WhatsApp"
             [(ngModel)]="formData.whatsapp_number"
             [ngModelOptions]="{standalone: true}"
           />
         </div>
 
-        <button type="submit" class="form__button">
-          Haz Clic Aquí Para Registrarte
+        <button type="submit" class="form__button" [class.submitting]="submitting" [disabled]="submitting">
+          {{ submitting ? 'Datos enviado Correctamente' : 'Haz Clic Aquí para registrarte' }}
         </button>
 
       </form>
@@ -50,19 +48,18 @@
     <p>
       <img
         class="section__image--principal"
-        src="../assets/img/imagenPrincipal01.jfif"
+        src="../../assets/img/casaCampo/gift3.gif"
         alt="imagen1"
       />
     </p>
 
     <label class="section__extrac">
-      ¡En <span class="subtext">La Caporala</span> ya contamos con
-      <span class="subtext">postes de electricidad</span> y
-      <span class="subtext">pozos de agua!</span>
+      ¡Más de <span class="subtext">100 proyectos</span> entregados en la
+      <span class="subtext">región de Ica!</span>
     </label>
 
     <div class="button__section__image">
-      <a href="#" class="letterButton">
+      <a (click)="scrollToTop()" class="letterButton">
         Haz clic aquí para enviarte la presentación
       </a>
     </div>
@@ -70,48 +67,57 @@
     <p>
       <img
         class="image2"
-        src="../assets/img/imagenCaballitoLogo.jfif"
+        src="../../assets/img/casaCampo/quevedologo 221.png"
         alt="imagen2"
       />
     </p>
 
     <p class="founder__container">
       <label class="section__extrac">
-        Imagina invertir en un lote cuya plusvalía crece desde el principio.
-        <span class="subtext">¡Ya son más de 400 familias que invirtieron!</span>
+        Descubre una oportunidad única para vivir tu sueño.
+        <br>
+        <span class="subtext">¡La mejor inversión </span>en tu hogar o negocio a tan solo S/. 1500!
       </label>
     </p>
 
-    <img class="image3" src="../assets/img/imagenPrincipal02.jfif" alt="imagen3" />
+    <img class="image3" src="../../assets/img/casaCampo/pag1.jpg" alt="imagen3" />
   </section>
 
   <section class="section__image">
     <p>
-      <label class="section__extrac subtext">En corporación Quevedo te ofrecemos:
+      <label class="section__extrac subtext">En Arquitectos Quevedo te ofrecemos:
       </label>
     </p>
 
-    <img class="benefit" src="../assets/img/01.jfif" alt="factibilidadServicios">
-    <img class="benefit" src="../assets/img/02.jfif" alt="tituloPropiedad">
-    <img class="benefit" src="../assets/img/03.jfif" alt="ubicacionPrivilegiada">
-    <img class="benefit" src="../assets/img/04.jfif" alt="garantia">
+    <img class="benefit" src="../../assets/img/casaCampo/01.png" alt="factibilidadServicios">
+    <img class="benefit" src="../../assets/img/casaCampo/02.png" alt="tituloPropiedad">
+    <img class="benefit" src="../../assets/img/casaCampo/03.png" alt="ubicacionPrivilegiada">
+    <img class="benefit" src="../../assets/img/casaCampo/04.png" alt="garantia">
+    <img class="benefit" src="../../assets/img/casaCampo/05.png" alt="garantia">
+    <img class="benefit" src="../../assets/img/casaCampo/06.png" alt="garantia">
+    <img class="benefit" src="../../assets/img/casaCampo/07.png" alt="garantia">
+    <img class="benefit" src="../../assets/img/casaCampo/08.png" alt="garantia">
 
     <div class="button__section__image">
-      <a href="#" class="letterButton">Haz clic aquí para enviarte la presentación</a>
+      <a (click)="scrollToTop()" class="letterButton">
+        Haz clic aquí para enviarte la presentación
+      </a>
     </div>
   </section>
 
   <section class="section__image">
     <p class="founder__container">
       <label class="section__extrac weight100">
-        Nosotros somos el estudio de arquitectos de corporación Quevedo y estamos listos para diseñar el hogar de tus sueños
+        Somos el <span class="subtext">Estudio de Arquitectos Quevedo</span>  y estamos listos para diseñar el hogar de tus sueños.
       </label>
     </p>
 
-    <img class="benefit" src="../assets/img/imagenPrincipal03.jfif" alt="factibilidadServicios">
+    <img class="img3" src="../../assets/img/casaCampo/pag 2.jpg" alt="factibilidadServicios">
 
     <div class="button__section__image">
-      <a href="#" class="letterButton">Haz clic aquí para enviarte la presentación</a>
+      <a (click)="scrollToTop()" class="letterButton">
+        Haz clic aquí para enviarte la presentación
+      </a>
     </div>
     <hr>
     <hr>
